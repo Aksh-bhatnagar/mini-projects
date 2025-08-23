@@ -7,7 +7,8 @@ It mimics the look and feel of Spotify with basic playback functionality.
 - Sidebar navigation
 - Playlist UI
 - Custom music player controls
-- Overlay scrollbar (without shifting content)
+- scrollbar
+- song lists
 
 ## 🛠️ Tech Stack
 - HTML

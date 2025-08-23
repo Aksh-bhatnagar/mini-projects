@@ -12,7 +12,6 @@ Users can create, read, update, and delete posts.
 ## 🛠️ Tech Stack
 - Node.js
 - Express.js
-- MongoDB (optional, if used)
 - REST API concepts
 
 ## ▶️ Run Locally

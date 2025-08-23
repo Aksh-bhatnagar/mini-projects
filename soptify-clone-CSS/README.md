@@ -12,4 +12,3 @@ It mimics the look and feel of Spotify with basic playback functionality.
 ## 🛠️ Tech Stack
 - HTML
 - CSS
-- JavaScript

@@ -10,6 +10,7 @@ Project is made using **HTML, CSS, JavaScript, Node.js, Express, MongoDB, React*
 ### 1. Camera Product Webpage (HTML + CSS)
 - A simple static webpage for camera products.
 - Built only with **HTML and CSS**.
+- https://aksh-bhatnagar.github.io/mini-projects/shutter-shot-CSS/
 
 ### 2. Simon Says Game (JavaScript)
 - A fun memory game inspired by the classic **Simon Says**.

@@ -14,7 +14,7 @@ Project is made using **HTML, CSS, JavaScript, Node.js, Express, MongoDB, React*
 
 ### 4. Spotify Clone (Frontend)
 - A simple Spotify-like **music player UI**.
-- Built with **HTML, CSS, and JavaScript**.
+- Built only with **HTML, CSS**.
 - https://aksh-bhatnagar.github.io/mini-projects/spotify-clone-CSS/
 
 ### 2. Camera Product Webpage (HTML + CSS)

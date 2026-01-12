@@ -1,7 +1,7 @@
 # Mini Projects 🚀
 
 This repository contains a collection of my mini web development projects built during my learning journey.  
-Each project is made using **HTML, CSS, JavaScript, Node.js, Express, MongoDB, React** and more.
+Project is made using **HTML, CSS, JavaScript, Node.js, Express, MongoDB, React** and more.
 
 ---
 

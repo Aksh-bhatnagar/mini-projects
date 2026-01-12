@@ -12,6 +12,3 @@ Each round adds a new step, testing memory and focus.
 - HTML
 - CSS
 - JavaScript
-
-## ▶️ Run Locally
-Open `index.html` in your browser.

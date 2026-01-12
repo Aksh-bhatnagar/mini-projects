@@ -12,6 +12,11 @@ Project is made using **HTML, CSS, JavaScript, Node.js, Express, MongoDB, React*
 - Built with **HTML, CSS, and JavaScript**.
 - https://aksh-bhatnagar.github.io/mini-projects/simon-says-JS/
 
+### 4. Spotify Clone (Frontend)
+- A simple Spotify-like **music player UI**.
+- Built with **HTML, CSS, and JavaScript**.
+- https://aksh-bhatnagar.github.io/mini-projects/spotify-clone-CSS/
+
 ### 2. Camera Product Webpage (HTML + CSS)
 - A simple static webpage for camera products.
 - Built only with **HTML and CSS**.
@@ -21,10 +26,6 @@ Project is made using **HTML, CSS, JavaScript, Node.js, Express, MongoDB, React*
 - A small clone of Quora with basic **Create, Read, Update, Delete** functionality.
 - Built using **Node.js, Express, REST APIs, and MongoDB**.
 - Views handled with **EJS templates**.
-
-### 4. Spotify Clone (Frontend)
-- A simple Spotify-like **music player UI**.
-- Built with **HTML, CSS, and JavaScript**.
 
 ### 5. Sky-Watch (React)
 - A **React-based weather app** to identify the weather of a given input city.

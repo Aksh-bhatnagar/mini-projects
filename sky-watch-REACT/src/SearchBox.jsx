@@ -4,54 +4,63 @@ import './SearchBox.css';
 import { useState } from 'react';
 
 export default function SearchBox({ updateInfo }) {
-    let [city, setCity] = useState("");
-    let [error, setError] = useState(false);
-    const API_URL = `https://api.openweathermap.org/data/2.5/weather`;
-    const API_KEY = "Enter your Api key";
+  const [city, setCity] = useState("");
+  const [error, setError] = useState(false);
 
-    let getWeatherInfo = async () => {
-        try {
-          let response = await fetch(`${API_URL}?q=${city}&appid=${API_KEY}&units=metric`);
-          let jsonResponse = await response.json();
-          let result = {
-              city: city,
-              temp: jsonResponse.main.temp,
-              tempMin: jsonResponse.main.temp_min,
-              tempMax: jsonResponse.main.temp_max,
-              humidity: jsonResponse.main.humidity,
-              feelsLike: jsonResponse.main.feels_like,
-              weather: jsonResponse.weather[0].description
-          }
-          console.log(result);
-          return result;
-        } catch (err) {
-          throw err;
-        }
+  const API_URL = "https://api.openweathermap.org/data/2.5/weather";
+  const API_KEY = import.meta.env.VITE_MY_API_KEY;
+
+  const handleChange = (evt) => {
+    setCity(evt.target.value);
+  };
+
+  const getWeatherInfo = async () => {
+    const response = await fetch(
+      `${API_URL}?q=${encodeURIComponent(city)}&appid=${API_KEY}&units=metric`
+    );
+
+    const jsonResponse = await response.json();
+
+    if (!response.ok) {
+      throw new Error(jsonResponse.message);
     }
 
-    let handleChange = (evt) => {
-        setCity(evt.target.value);
-    }
+    return {
+      city,
+      temp: jsonResponse.main.temp,
+      tempMin: jsonResponse.main.temp_min,
+      tempMax: jsonResponse.main.temp_max,
+      humidity: jsonResponse.main.humidity,
+      feelsLike: jsonResponse.main.feels_like,
+      weather: jsonResponse.weather[0].description
+    };
+  };
 
-    let handleSubmit = async (evt) => {
-        try {
-          evt.preventDefault();
-        console.log("Searching weather for:", city);
-        setCity(""); // Clear the input after submission
-        let newInfo = await getWeatherInfo();
-        updateInfo(newInfo);
-        } catch (err) {
-          setError(true);
-        }
+  const handleSubmit = async (evt) => {
+    evt.preventDefault();
+    try {
+      const newInfo = await getWeatherInfo();
+      updateInfo(newInfo);
+      setError(false);
+      setCity("");
+    } catch (err) {
+      setError(true);
     }
+  };
 
-    return (
+  return (
     <div className="SearchBox">
       <form onSubmit={handleSubmit}>
-        <TextField label="City Name" variant="outlined" id="city" required value={city} onChange={handleChange} />
+        <TextField
+          label="City Name"
+          variant="outlined"
+          required
+          value={city}
+          onChange={handleChange}
+        />
         <br /><br />
-        <Button variant="contained" type='submit'>Search</Button>
-        {error && <p style={{ color: 'red' }} className="error">No such place found.</p>}
+        <Button variant="contained" type="submit">Search</Button>
+        {error && <p style={{ color: 'red' }}>No such place found.</p>}
       </form>
     </div>
   );

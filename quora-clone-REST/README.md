@@ -13,8 +13,3 @@ Users can create, read, update, and delete posts.
 - Node.js
 - Express.js
 - REST API concepts
-
-## ▶️ Run Locally
-```bash
-npm install
-node app.js

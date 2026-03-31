@@ -1,11 +1,11 @@
-# Mini Projects 🚀
+# Mini Projects 
 
 This repository contains a collection of my mini web development projects built during my learning journey.  
 Project is made using **HTML, CSS, JavaScript, Node.js, Express, MongoDB, React** and more.
 
 ---
 
-## 📂 Projects
+##  Projects
 
 ### 1. Simon Says Game (JavaScript)
 - A fun memory game inspired by the classic **Simon Says**.
@@ -47,7 +47,7 @@ Project is made using **HTML, CSS, JavaScript, Node.js, Express, MongoDB, React*
 
 ---
 
-## 🛠️ Technologies Used
+##  Technologies Used
 - HTML, CSS, JavaScript  
 - Node.js, Express  
 - MongoDB  
